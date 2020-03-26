@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SmartStickApp3</string>
+    <string name="drawer_open">Açık</string>
+    <string name="drawer_close">Kapalı</string>
+    <string name="bluetoothunuzu_aktif_hale_getirin">Bluetoothunuzu aktif hale getirin</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="bluetooth_ba_lant_s_olan_cihaz_listesi">Bluetooth bağlantısı olan cihaz listesi</string>
+    <string name="cihazlari_listele">Cihazlari Listele</string>
+</resources>

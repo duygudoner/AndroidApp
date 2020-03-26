@@ -1,0 +1,2 @@
+# androidSmartS
+Bitirme Ödevi

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#a5d296</color>
+    <color name="colorPrimaryDark">#8CD790</color>
+    <color name="colorSecondaryDark">#285943</color>
+    <color name="colorAccent">#D7FFF1</color>
+    <color name="colorControlHighlight">#8BC34A</color>
+    <color name="colorControlActivated">#9575cd</color>
+    <color name="custom_button_textC">#FFFFFF</color>
+
+    <color name="cardViewGreen01">#4F7942</color>
+    <color name="cardViewGreen02">#4F7942</color>
+    <color name="cardViewGreen03">#4F7942</color>
+
+</resources>
