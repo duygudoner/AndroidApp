@@ -49,7 +49,7 @@ public class NavigationDrawerItem {
     private static String[] getBasliklar() {
 
         return new String[]{
-                "Bitki Ekle","Bitkileri Göster","Bitki Ara","Hakkında"
+                "Bitki Ekle","Bitki Göster","Bitki Ara","Hakkında"
         };
     }
 
