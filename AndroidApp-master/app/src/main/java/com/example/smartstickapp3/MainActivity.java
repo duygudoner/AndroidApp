@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     String address = null;
     private ProgressDialog progress;
     BluetoothAdapter myBluetooth = null;
-
     BluetoothSocket btSocket = null;
     BluetoothDevice remoteDevice;
     BluetoothServerSocket nmserver;
@@ -54,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        myBluetooth = BluetoothAdapter.getDefaultAdapter();
         Intent newInt = getIntent();
         address = newInt.getStringExtra(BluetoothScreen.EXTRA_ADRESS);
 
@@ -179,10 +179,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 String mesaj = " ";
                 switch (item.getItemId()) {
                     case R.id.bluetooth:
-                        mesaj = "BLUETOOTH";
+                        mesaj = bluetoothDurumuYaz();
                         Toast.makeText(MainActivity.this, mesaj, Toast.LENGTH_SHORT).show();
                         break;
-                    case R.id.hakkında:
+                    case R.id.hakkinda:
                         mesaj = "HAKKINDA";
                         Toast.makeText(MainActivity.this, mesaj, Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(MainActivity.this,HakkindaActivity.class);
@@ -195,6 +195,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 return true;
             }
         });
+    }
+
+    public String bluetoothDurumuYaz(){
+        if (!myBluetooth.isEnabled()) {
+            return "Kapalı";
+        }
+        else{
+            return "Açık";
+        }
     }
 
     public void uygulamadanCikisYap() {

@@ -14,10 +14,11 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SearchActivity"></activity>
+        <activity android:name=".HakkindaActivity"></activity>
+        <activity android:name=".SearchActivity" />
         <activity android:name=".ShowActivity" />
         <activity android:name=".AddActivity" />
-        <activity android:name=".BluetoothScreen"/>
+        <activity android:name=".BluetoothScreen" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +26,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
