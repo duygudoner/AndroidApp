@@ -30,7 +30,7 @@ public class SplashActivity extends AppCompatActivity {
                 public void run() {
                     try{
                         synchronized (this){
-                            wait(2500);
+                            wait(1000);
                         }
                     }catch (InterruptedException ex){
 

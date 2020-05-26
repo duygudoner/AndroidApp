@@ -36,12 +36,10 @@
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView"
@@ -51,7 +49,6 @@
         android:text="@string/bluetoothunuzu_aktif_hale_getirin"
         android:textAlignment="center"
         android:textSize="22sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -64,7 +61,6 @@
         android:text="@string/bluetooth_ba_lant_s_olan_cihaz_listesi"
         android:textAlignment="center"
         android:textSize="20sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,14 +68,19 @@
 
     <ListView
         android:id="@+id/lvCihazListele"
-        android:layout_width="match_parent"
-        android:layout_height="332dp"
+        android:layout_width="271dp"
+        android:layout_height="280dp"
         android:layout_below="@+id/btnCihazListele"
         android:layout_alignStart="@+id/btnCihazListele"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
         android:layout_toEndOf="@+id/btnCihazListele"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCihazListele"
-        app:layout_constraintVertical_bias="0.663"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintVertical_bias="0.893" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
